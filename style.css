@@ -1,0 +1,252 @@
+* {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+  }
+  .sidebar {
+    z-index: 1;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #123D80;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar li {
+    padding: 8px 15px;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  .toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .toggle-btn:focus {
+    outline: none;
+  }
+
+  .sidebar ul li:hover {
+    background-color: #0D47A1;
+    border-radius: 10px;
+  }
+
+  .navbar {
+    background-color: #fff;
+  }
+
+  .navbar button {
+    color: #103775;
+  }
+
+  .sidebar ul li:hover a {
+    color: #fff;
+  }
+
+  .navbar-nav li a {
+    color: #103775;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .navbar-nav li a:hover {
+    background-color: #123D80;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .col-md-8 {
+    margin-top: 0;
+  }
+
+  .card-height {
+    height: 100%;
+  }
+
+  .explore {
+    position: relative;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 50px;
+    transition: all .3s;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #005DD5;
+    cursor: pointer;
+  }
+
+  .explore:hover {
+    transform: scale(1.05);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .explore:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+
+  .explore::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: #003BA9;
+  }
+
+  .explore:hover::after {
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+  }
+
+  .card-hover {
+    height: 100%;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 10px;
+  }
+
+  .card-hover:hover {
+    transform: scale(1.05);
+    border: 3px solid #103775;
+    background-color: #103775;
+    color: #fff;
+  }
+
+  .box-icon {
+    background-color: #2A76D0;
+    box-shadow: 0 0 10px rgba(0, 79, 180, 0.7); /* Adjust the values as needed */
+  }
+
+  .card-img-top {
+    max-height: 100%; /* Adjust the height as needed */
+    object-fit: cover; /* This ensures the image covers the entire area of the container */
+  }
+
+  footer {
+    background-color: #003BA9;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+  }
+  footer p {
+    margin-bottom: 0; /* Remove default margin */
+  }
+
+  .card-hovers:hover {
+    transform: scale(1.05); /* Adjust the scale factor for desired zoom level */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+  }
+
+  .about-cards {
+    position: relative;
+    overflow: hidden;
+    color: #003F8A;
+    border: none; /* Remove default border */
+    background: rgba(255, 255, 255, 0.1); /* Adjust opacity for glass effect */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Adjust shadow for glass effect */
+    border-radius: 10px; /* Adjust border radius as needed */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  }
+
+  .about-cards:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(69, 160, 245, 0.5) 0%, rgba(99, 212, 255, 0.5) 100%); /* Adjust gradient colors and direction as needed */
+    z-index: -1;
+  }
+
+  .about-cards:hover {
+    transform: scale(1.05); /* Zoom out effect on hover */
+  }
+
+  .sample-cards {
+    background: linear-gradient(to bottom right, #1A237E, #03A9F4); /* Adjust gradient colors and direction as needed */
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff; /* Set text color to white for better visibility */
+  }
+
+  /* Optional: If you want to add some space between the text and the gradient background */
+  .sample-cards h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .intro-card {
+    background: linear-gradient(to bottom, #4682B4, #1E90FF); /* Adjust gradient colors and direction as needed */
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff; /* Set text color to white for better visibility */
+  }
+
+  /* Optional: If you want to add some space between the text and the gradient background */
+  .intro-card h5,
+  .intro-card h2,
+  .intro-card p {
+    margin-bottom: 20px;
+  }
+
+  .intro-card h2 b {
+    color: #fff; /* Set the color of the nested <b> element */
+  }
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 150px;
+  }
+
+  .toggle-btn {
+    font-size: 16px;
+  }
+
+  /* Add more responsive styles as needed */
+}
